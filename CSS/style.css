@@ -1,0 +1,396 @@
+@font-face {
+    font-family: 'brandFont';
+    src: url("/fonts/static/roboto/Merriweather.ttf");
+
+    font-family: 'brandFontLight';
+    src: url("/fonts/static/roboto/Merriweather.ttf");
+
+    font-family: 'bodyText';
+    src: url("/fonts/nonito/static/Merriweather.ttf");
+}
+.containerMain{
+    background: url("../img/imageonline-co-brightnessadjusted.png");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; padding-top: 100px; /* Agrega espacio encima del contenido */
+    padding-bottom: 100px;
+  
+    
+}
+.container2 {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+ 
+    padding: 20px; 
+    background-color: hwb(0 100% 0%);
+}
+nav{
+    background-color: transparent;
+    
+}
+.textItem{
+    padding-top:30px ;
+}
+
+a >strong{
+    color: white;
+    font-family: "bodyText";
+    font-size: 22px;
+}
+.custom-navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.custom-navbar ul {
+    display: flex;
+    justify-content:right;
+    width: 100%;
+    padding: 0;
+}
+@media (min-width: 1400px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1500px;
+        max-height: fit-content;
+    }
+}
+.custom-navbar li {
+    list-style: none;
+    margin: 0;
+}
+@media (max-width: 991px) {
+    .navbarContainer{
+        display: flex;
+        justify-content: right;
+    }
+}
+.carruselRow{
+    padding-bottom: 30px;
+}
+.carruselBody{
+    border-radius: 15px;
+    overflow: hidden;
+}
+#myCarouselIndicators > button{
+    width: 50px;
+    height: 13px;
+    background-color: #c39f74;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#brand{
+    position: relative;
+    background: transparent;
+    width: 70%;
+    height: 90%;
+}
+
+.li{
+    display: flex;
+    align-items: center;
+    padding-bottom: 25px;
+}
+.hex {
+    width:150px;
+    height:86px;
+    background-color: #ccc;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;                   
+    background-size: auto 173px;                                                    
+    position: relative;
+    float:left;
+    margin:25px 5px;
+    text-align:center;
+    zoom:1;
+}
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}    
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}    
+.gallery{
+    width: 85%;
+    max-width: 900px;
+    margin-left:auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,133px);
+    grid-auto-rows: 200px;
+    justify-content: center;
+    gap: 2rem;
+}
+.gallery_item{
+    clip-path:polygon(50% 0%,100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    grid-column: span 2;
+    height: 283px;
+}
+.gallery_item:hover{
+    filter: brightness(0.3);
+}
+.gallery_item:first-of-type{
+    grid-column: 2/ span 2;
+}
+@media screen and (min-width: 270px) and (max-width:504px) {
+    .gallery_item:first-of-type{
+        grid-column: 1 / span 2;
+    }
+    .gallery{
+        grid-auto-rows: 283px;
+    }
+}
+@media screen and (min-width: 505px) and (max-width:520px) {
+  .gallery_item:nth-of-type(odd){
+    grid-column: 2 / span 2;
+  }
+}
+@media screen and (min-width: 686px) and (max-width:700px) {
+    .gallery_item:nth-of-type(3n + 1){
+      grid-column: 2 / span 2;
+    }
+}
+@media screen and (min-width: 863px) and (max-width:1038px) {
+    .gallery_item:nth-of-type(4n + 1){
+      grid-column: 2 / span 2;
+    }
+}
+@media screen and (min-width: 1039px) and (max-width:1090px) {
+    .gallery_item:nth-of-type(5n + 1){
+      grid-column: 2 / span 2;
+    }
+}
+@media screen and (min-width: 1216px) and (max-width:1391px) {
+    .gallery_item:nth-of-type(6n + 1){
+      grid-column: 2 / span 2;
+    }
+}
+@media screen and (min-width: 1392px)  {
+    .gallery_item:nth-of-type(7n + 1){
+        grid-column: 2 / span 2;
+    }
+}
+
+@media (min-width: 500px) {
+    .d-lg-block {
+        display: block !important;
+        background-color: #043052;
+        border-color: #043052;
+        width: 30%;
+        font-size: larger;
+    }
+}
+
+@media (min-width: 992px) {
+    .pe-lg-5 {
+        padding-top: 40px;
+    }
+}
+.cuadro {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    margin: 0 10px;
+  }
+  
+  .circulos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .circulo {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 5px;
+  }
+  button {
+    appearance: button;
+    background-color: #1899D6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .8px;
+    line-height: 20px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 13px 19px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+   }
+   
+   button:after {
+    background-clip: padding-box;
+    background-color: #1CB0F6;
+    border: solid transparent;
+    border-radius: 16px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+   }
+   
+   button:main, button:focus {
+    user-select: auto;
+   }
+   
+   button:hover:not(:disabled) {
+    filter: brightness(1.1);
+   }
+   
+   button:disabled {
+    cursor: auto;
+   }
+   
+   button:active:after {
+    border-width: 0 0 0px;
+   }
+   
+   button:active {
+    padding-bottom: 10px;
+   }
+   .card {
+    position: relative;
+    background-color: #30344c;
+    padding: 1em;
+    z-index: 5;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    max-width: 500px;
+    transition: 300ms ease-in-out;
+  }
+  
+  .username {
+    color: #C6E1ED;
+    font-size: 0.85em;
+    font-weight: 600;
+  }
+  
+  .body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .body .text {
+    margin: 0 10px 0 0;
+    white-space: pre-line;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 4px;
+  }
+  
+  .footer {
+    width: 100%;
+    position: static;
+    bottom: 0; /* Opcional, si deseas que el pie de página esté fijo en la parte inferior */
+    left: 0; /* Opcional, si deseas que el pie de página esté fijo en la parte inferior */
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    margin-top: 10px;
+}
+
+  
+  .footer div {
+    margin-right: 1rem;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .footer svg {
+    margin-right: 5px;
+    height: 100%;
+    stroke: #9fa4aa;
+  }
+  
+  .viewer span {
+    height: 20px;
+    width: 20px;
+    background-color: rgb(28, 117, 219);
+    margin-right: -6px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    font-size: 8px;
+    color: #fff;
+    padding: 2px;
+  }
+  
+  .viewer span svg {
+    stroke: #fff;
+  }
+  
+  
+  .row1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card {
+        margin-bottom: 10px;
+        margin-right: 30px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        width: 200px;
+        text-align: center;
+    }
+
+    
+    
+    .hidden {
+        display: none;
+    }
+    .profile-pic {
+        border-radius: 50%; 
+        width: 50px; 
+        height: 50px; 
+        margin-top: 10px; /* Espacio superior para separar la imagen del texto */
+    }
+    
+  
+    #Nosotros {
+        background-color: #D0D9E0;
+    }
+   .radio-input{
+    background-color: #D0D9E0;
+   }
